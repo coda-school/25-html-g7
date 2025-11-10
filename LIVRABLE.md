@@ -80,9 +80,16 @@ Chaque groupe peut choisir un certain nombre **d'exigences complémentaires** en
 Elles doivent être reportées ci-dessous.
 
 ### Exigence 1
-
+  Thème Sombre/Clair (via bouton et préférence système)
+  
 ### Exigence 2
-
+  Navigation Sticky
+  
+### Exigence 3
+  Formulaire de Contacts
+  
+### Exigence 4
+  Versions FR/EN
 
 ## Rendu attendu
 
