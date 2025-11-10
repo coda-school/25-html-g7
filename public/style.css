@@ -3,3 +3,13 @@ section{
     justify-content: space-evenly;
     
 }
+.inputMessage{
+    width: 730px;
+    height: 300px;
+}
+.inputSujet{
+    width: 730px;
+}
+input{
+    border-radius: 20px;
+}
