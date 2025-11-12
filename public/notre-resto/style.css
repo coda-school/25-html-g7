@@ -5,6 +5,15 @@ header
     color: #C6A66C;
 }
 
+.mille-wok-title 
+{
+    margin-top: 5rem;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .restaurant
 {
     color: rgb(113, 62, 17);
@@ -17,28 +26,38 @@ header
 
 body
 {
-    background-color: rgba(5, 4, 0, 0.849);
+    background-color: #121212;
 }
 
 .villes
 {
     text-align: center;
     display: flex;
-    justify-content: center;    
-    gap: 80px;                 
+    justify-content: center;     
+    gap: 4rem;       
     flex-wrap: wrap;           
-    margin-top: 30px;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     color: rgba(68, 61, 18, 0.642);
 
 }
 
 .ville
 {
-    width: 250px;
+    width: 260px;
+    height: 320px;
     background-color: beige;
     border: 5px solid;
-    padding: 20;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 7px 10px 8px rgba(0,0,0,0.6)
+}
 
- }
+.image-nr
+{
+    border-radius: 10px;
+    width: 260px;
+    height: 150px;
+}
 
