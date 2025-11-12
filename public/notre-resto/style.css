@@ -26,19 +26,19 @@ header
 
 body
 {
+    font-family: sans-serif;
     background-color: #121212;
 }
 
 .villes
 {
     text-align: center;
-    display: flex;
-    justify-content: center;     
-    gap: 4rem;       
-    flex-wrap: wrap;           
+    display: grid;
+    justify-content: center;  
+    align-content: center;   
+    grid-template-columns: auto auto auto;     
+    gap: 4rem;         
     margin-top: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
     color: rgba(68, 61, 18, 0.642);
 
 }
@@ -46,17 +46,15 @@ body
 .ville
 {
     width: 260px;
-    height: 320px;
+    height: 340px;
     background-color: beige;
     border: 5px solid;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 7px 10px 8px rgba(0,0,0,0.6)
 }
 
 .image-nr
 {
-    border-radius: 10px;
     width: 260px;
     height: 150px;
 }
