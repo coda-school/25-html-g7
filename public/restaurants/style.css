@@ -27,17 +27,18 @@ header
 }
 body
 {
+    z-index: 2;
     font-family: sans-serif;
-    background-color: #121212;
     margin: 0;  
     padding: 0;
-    background-image: url("arka-plan.png"); 
+    background-image: url("nos-restaurants-bg.png"); 
     background-size: cover;     
     background-repeat: no-repeat;
     background-position: center; 
     background-attachment: fixed;
     backdrop-filter: blur(5px);
 }
+
 .villes
 {
     text-align: center;
@@ -52,7 +53,7 @@ body
 .ville
 {
     width: 260px;
-    height: 340px;
+    height: 350px;
     background-color: beige;
     border: 5px solid;
     border-radius: 10px;
@@ -63,15 +64,18 @@ body
     width: 260px;
     height: 150px;
 }
-.carte-france
-{
-    display: block;                  
-    margin: 2rem auto;          
-    width: 1200px; 
-    height: 400px;                                    
-    border: 5px solid #C6A66C;      
-    border-radius: 10px;                           
-    background-color: #C6A66C;       
-    box-shadow: 0 0 10px rgba(0,0,0,0.6); 
+
+
+@media (max-width: 640px) {
+    .villes {
+        grid-template-columns: auto auto;
+        margin: 0 2rem;
+        gap: 0.5rem;
+    }
 }
 
+@media (max-width:320px) {
+    .villes {
+        grid-template-columns: auto;
+    }
+}
