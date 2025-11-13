@@ -1,0 +1,50 @@
+body
+{
+    z-index: 2;
+    font-family: sans-serif;
+    margin: 0;  
+    padding: 0;
+    background-image: url("nos-restaurants-bg.png"); 
+    background-size: cover;     
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+.mille-wok-title
+{
+    padding-top: 5rem;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titre-principal
+{
+    text-align: center;
+    display: grid;
+    color: #C6A66C;
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+.sous-titre
+{
+    text-align: center;
+    display: grid;
+    font-size: larger;
+    color: #C6A66C;
+}
+.nos-signatures
+{
+    color: #C6A66C;
+
+}
+.nos-signatures
+{
+    text-align: center;
+    display: grid;
+    justify-content: center;  
+    align-content: center;   
+    grid-template-columns: auto auto auto;         
+    margin-top: 2rem;
+    color:  #C6A66C;
+}
