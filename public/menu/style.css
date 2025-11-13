@@ -6,7 +6,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.titre-principal
+.menu
 {
     text-align: center;
     display: grid;
@@ -39,7 +39,7 @@ body
     text-align: center;
     margin: 2rem auto;
     padding: 1rem;
-    color: #6b3e1e;;
+    color: #6b3e1e;
     background-color: beige;
     border: 3px solid;
     border-radius: 10px;
@@ -48,6 +48,14 @@ body
 .nos-signatures p
 {
     color: black;
+    text-align: center;
+    margin: 5px 0;
+}
+.nos-signatures p span
+{
+  text-align: center;
+  float: right;
+
 }
 .menu-section
 {
@@ -71,7 +79,7 @@ body
   border-radius: 10px;
   padding: 20px;
   width: 250px;
-  text-align: center;
+  text-align: left;
   box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
 }
 .box h2 
@@ -83,76 +91,130 @@ body
   font-weight: normal;
   margin: 5px 0;
 }
-.toppings 
+.row p span
 {
-  background-color:beige;
+   text-align: center;
+   float: right;
+}
+.toppings-title-box 
+{
+  background-color: beige;
   border: 3px solid #c6a66c;
   border-radius: 10px;
-  padding: 20px;
-  width: 80%; 
-  margin: 2rem auto; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7); 
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.row-toppings 
+{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.toppings h2 
+.box-topping 
+{
+  background-color: beige;
+  border: 3px solid #c6a66c;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px; /* iki kutu yan yana sığacak genişlik */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+.box-topping p 
+{
+  display: flex;
+  justify-content: space-between; 
+  margin: 5px 0;
+}
+
+.prix 
+{
+  font-weight: bold;
+}
+
+
+.sauce-title-box {
+  background-color: beige;
+  border: 3px solid #c6a66c;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.sauce {
+  background-color: beige;
+  border: 3px solid #c6a66c;
+  border-radius: 10px;
+  width: 80%;         
+  max-width: 700px;    
+  margin: 2rem auto;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+.sauce h2 
 {
   text-align: center;
   color: #5b3a29;
   margin-bottom: 10px;
 }
-.colonnes 
+
+.sauce-colonnes 
+{
+  display: flex;      
+}
+.sauce-colonne 
+{
+  flex: 1;   
+}          
+.sauce-colonne p 
 {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-.colonne-1, .colonne-2 
-{
-  flex: 1;             
-  text-align: center;
-}
-.toppings h3
-{
-  font-size: small;
+  justify-content: space-between; /* ürün solda, fiyat sağda */
   margin: 4px 0;
-  color: black;
 }
-.sauce
+.prix 
 {
-  background-color:beige;
+  font-weight: bold;
+}
+.extras-desserts-boissons {
+  display: flex;              /* kutuları yan yana diz */
+  justify-content: space-between;
+  gap: 20px;                  /* kutular arası boşluk */
+  width: 90%;                 /* kapsayıcı genişliği */
+  margin: 2rem auto;
+}
+
+.extras, .desserts, .boissons 
+{
+  background-color: beige;
   border: 3px solid #c6a66c;
   border-radius: 10px;
   padding: 20px;
-  width: 80%; 
-  margin: 2rem auto; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7); 
+  flex: 1;                     /* tüm kutular eşit genişlikte */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
 }
-.sauce h2
-{
+.extras h2, .desserts h2, .boissons h2
+ {
   text-align: center;
   color: #5b3a29;
   margin-bottom: 10px;
 }
-.colonnes
+.extras p, .desserts p, .boissons p 
 {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  margin: 5px 0;
 }
-.colonne-1,.colonne-2
+.extras-desserts-boissons p span
 {
-  flex: 1;             
-  text-align: center;
-}
-.extras-desserts-boissons
-{
-  background-color:beige;
-  border: 3px solid #c6a66c;
-  border-radius: 10px;
-  padding: 20px;
-  width: 80%; 
-  margin: 2rem auto; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7); 
-}
 
+   text-align: center;
+   float: right;
+}
 
