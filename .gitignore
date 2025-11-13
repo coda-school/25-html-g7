@@ -1,3 +1,5 @@
 .idea
 .vite
 _private
+.DS_Store
+layout-grid.html
