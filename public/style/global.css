@@ -44,6 +44,35 @@ body {
     font-family: sans-serif;
 }
 
+.lang {
+    text-decoration: none;
+    color: var(--text-color-white);
+}
+
+.lang:hover {
+    color: var(--accent-gold);
+}
+
+.lang-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.flag-btn {
+    margin-top: 1rem;
+    padding: 10px 20px !important; /* un peu plus petit pour les drapeaux */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag-btn img {
+    width: 40px;
+    height: auto;
+}
+
 .logo img {
     width: 40px;
 }

@@ -1,0 +1,97 @@
+h1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--accent-gold);
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 2px 1px rgb(129, 106, 66);
+}
+
+
+.form {
+    margin-bottom: 2rem;
+}
+
+.title
+{
+    color: var(--accent-gold);
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+}
+.card
+{
+    border: 2px solid var(--accent-gold);
+    border-radius: 14px;
+    padding: 2rem;
+    background-color: rgb(27, 27, 27);
+    width: 60%;
+    margin: 8rem auto 3rem auto;
+
+}
+
+.inputEmail
+{
+    width: 100%;
+}
+.inputSujet
+{
+    width: 100%;
+}
+.inputMessage
+{
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+}
+
+input, textarea
+{
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--accent-gold);
+    background-color:  rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 12px;
+}
+.order-btn
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 0 var(--shadow-color);
+}
+.btn
+{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: var(--accent-gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 7px 0 0 rgb(129, 106, 66);
+    margin-top: 2rem;
+}
+
+.btn:hover
+{
+    background-color: var(--accent-gold);
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 0 rgb(129, 106, 66);
+}
+
+label:has(+ input:required)::before {
+    content:"* ";
+    color:red;
+}

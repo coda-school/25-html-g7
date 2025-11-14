@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mille Wok</title>
     <meta name="description"
-          content="Découvrez Mille Wok Dijon : cuisine saine, délicieuse et authentique. Explorez nos différent restaurants qui commencent à s'installer partout dans la monde, en commençant par la France et le Japon, Prenez conaissance de notre menu et commandez en ligne !">
-    <link rel="stylesheet" href="nav-footer.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+          content="Discover Mille Wok Dijon: healthy, delicious, and authentic cuisine. Explore our different restaurants starting to open up all over the world, beginning with France and Japan. Check out our menu and order online!">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="icon" type="image/png" href="../assets/img/logo.png">
 </head>
 <body>
 <header>
     <nav class="navbar">
         <div class="nav-logo2">
-            <a href="./index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            <a href="./menu.html"><img src="../assets/img/logo.png" alt="logo"></a>
         </div>
 
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
@@ -25,100 +25,181 @@
         </label>
 
         <ul class="nav-links">
-            <li><a href="./restaurants/index.html">RESTAURANTS</a></li>
-            <li><a href="./menu/index.html">MENU</a></li>
-            <li><a href="#">ACCUEIL</a></li>
-            <li><a href="./contact/index.html">CONTACT</a></li>
-            <li><a href="./commander/index.html">COMMANDER</a></li>
+            <li><a href="restaurants.html">RESTAURANTS</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="commander.html">ORDER</a></li>
         </ul>
+        <div class="lang-buttons">
+            <a href="../fr/menu.html" class="btn flag-btn">
+                <img src="https://flagcdn.com/w40/fr.png" alt="French">
+            </a>
+        </div>
     </nav>
-    <picture>
-        <source srcset="assets/img/mille-wok-name-light.png" media="(prefers-color-scheme: light)">
-        <img class="mille-wok-title" src="assets/img/mille-wok-name-dark.png" alt="Mille Wok">
-    </picture>
-    <h1 class="accroche">Manger sain, un corps sain</h1>
+    <h1 class="start">MENU</h1>
 </header>
-<section class="panel">
-    <div class="track">
-        <figure class="card">
-            <img src="assets/img/wok1.jpeg" alt="">
-        </figure>
-        <figure class="card">
-            <img src="assets/img/wok2.jpg" alt="">
-        </figure>
-        <figure class="card">
-            <img src="assets/img/wok3.jpg" alt="">
-        </figure>
-        <figure class="card">
-            <img src="assets/img/wok4.jpeg" alt="">
-        </figure>
-        <figure class="card">
-            <img src="assets/img/wok5.png" alt="">
-        </figure>
-        <figure class="card">
-            <img src="assets/img/wok6.png" alt="">
-        </figure>
-        <figure class="card">
-            <img src="assets/img/wok7.png" alt="">
-        </figure>
+
+<section class="nos-signatures">
+    <div class="titre-principal-de-signatures">
+        <h2>OUR SIGNATURE WOKS</h2>
+        <hr>
+        <div class="woks">
+            <h3>Paris Wok</h3>
+            <p>Stir-fried Noodles - Chicken - Pineapple - Bean Sprouts - Paris Mushroom - Onions<span class="prix">12.50€</span>
+            </p>
+            <h3>Dijon Wok</h3>
+            <p>Rice Vermicelli - Shrimp - Bean Sprouts - Onions - Bamboo Shoots - Carrots - Sweet and Sour Sauce<span class="prix">13.95€</span></p>
+            <h3>Besançon Wok</h3>
+            <p>Rice - Chicken - Bacon Bits - Paris Mushroom - Pickles - Croutons - Emmental Cheese - Cheese Sauce <span
+                    class="prix">11.95€</span></p>
+            <h3>Lille Wok</h3>
+            <p>Stir-fried Noodles - Beef - Broccoli - Chinese Mushroom - Bamboo Shoots - Salty Sauce <span
+                    class="prix">17.95€</span></p>
+            <h3>Bordeaux Wok</h3>
+            <p>Rice Vermicelli - Beef - Carrots - Onions - Mint - Cilantro - Spring Roll Sauce <span class="prix">14.95€</span>
+            </p>
+            <h3>Tokyo Wok</h3>
+            <p>(Salmon or Chicken or Beef or Tofu) - Vinegared Rice - Carrots - Cucumbers - Avocado - Edamame - Choice of Sauce <span class="prix">16.95€</span></p>
+        </div>
     </div>
 </section>
-<div class="order-btn">
-    <a href="./commander/index.html" class="btn">COMMANDER</a>
-</div>
-<h2 class="subtitle">Actualité</h2>
-<section class="news">
-    <article class="article">
-        <figure class="article-img">
-            <img class="article-image" src="assets/img/place-wok.jpeg" alt="Façade Mille Wok">
-        </figure>
-        <section class="article-content">
-            <h3 class="article-title">Ré-Ouverture de Mille Wok Dijon !</h3>
-            <p class="article-excerpt">Rejoignez-nous cette semaine pour des prix inédits pour la ré-ouverture du
-                restaurant ! (46 Rue d'Auxonne, 21000 Dijon) <br>Avec bien évidemment nos fameux challenges Spicyyy
-                🥵🌶️</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=46+Rue+d%27Auxonne+21000+Dijon" target="_blank"
-               class="read-more">Itinéraire</a>
-        </section>
-    </article>
-    <article class="article">
-        <figure class="article-img">
-            <img class="article-image" src="assets/img/autumn-menu.png" alt="Façade Mille Wok">
-        </figure>
-        <section class="article-content">
-            <h3 class="article-title">Nouveau Menu Automne chez Mille Wok 🍂🥢</h3>
-            <p class="article-excerpt">Découvrez nos nouvelles recettes de saison avec des ingrédients frais et locaux.
-                Venez tester nos plats épicés ou doux selon vos envies !</p>
-            <a href="#" class="read-more">Voir les détails</a>
-        </section>
-    </article>
-    <article class="article">
-        <figure class="article-img">
-            <img class="article-image" src="assets/img/happy-hour.png" alt="Soirée conviviale chez Mille Wok">
-        </figure>
-        <section class="article-content">
-            <h3 class="article-title">Soirée Happy Hour chez Mille Wok 🍹🥢</h3>
-            <p class="article-excerpt">Rejoignez-nous tous les vendredis pour notre Happy Hour spécial ! Profitez de
-                réductions sur vos plats préférés et de boissons exclusives, dans une ambiance chaleureuse et
-                conviviale.</p>
-            <a href="#" class="read-more">Découvrir l'Happy Hour</a>
-        </section>
-    </article>
+
+<section class="menu-section">
+    <div class="subtitle">
+        <h2>OUR CUSTOM WOKS</h2>
+    </div>
+    <div class="row">
+        <div class="box base">
+            <h2>Choose Your Base</h2>
+            <hr>
+            <b>4.95€</b>
+            <p>Scented Rice</p>
+            <p>Cantonese Rice</p>
+            <p>Stir-fried Noodles</p>
+            <p>Stir-fried Vegetables</p>
+        </div>
+
+        <div class="box viande">
+            <h2>Choose Your Protein</h2>
+            <hr>
+            <p>Chicken <span class="prix">2.50€</span></p>
+            <p>Beef <span class="prix">2.50€</span></p>
+            <p>Shrimp <span class="prix">3.50€</span></p>
+            <p>Bacon Bits <span class="prix">2.50€</span></p>
+            <p>Tuna <span class="prix">2.50€</span></p>
+        </div>
+    </div>
+
+
+    <div class="toppings">
+        <div class="toppings-title-box">
+            <h2>Choose Your Toppings</h2>
+        </div>
+        <hr>
+        <div class="row-toppings">
+
+            <div class="box-topping">
+                <p>Onions <span class="prix">1.10€</span></p>
+                <p>Carrots <span class="prix">1.10€</span></p>
+                <p>Mushrooms <span class="prix">1.10€</span></p>
+                <p>Broccoli <span class="prix">1.10€</span></p>
+                <p>Olives <span class="prix">1.10€</span></p>
+                <p>Zucchini <span class="prix">1.10€</span></p>
+                <p>Bamboo Shoots <span class="prix">1.10€</span></p>
+                <p>Bean Sprouts <span class="prix">1.10€</span></p>
+                <p>Bell Pepper <span class="prix">1.10€</span></p>
+                <p>Corn <span class="prix">1.10€</span></p>
+                <p>Cilantro <span class="prix">1.10€</span></p>
+                <p>Pineapple <span class="prix">1.10€</span></p>
+                <p>Pickle <span class="prix">1.10€</span></p>
+                <p>Cauliflower <span class="prix">1.10€</span></p>
+            </div>
+
+            <div class="box-topping">
+                <p>Peanuts <span class="prix">1.50€</span></p>
+                <p>Paris Mushrooms <span class="prix">1.50€</span></p>
+                <p>Chinese Mushrooms <span class="prix">1.50€</span></p>
+                <p>Egg <span class="prix">1.50€</span></p>
+                <p>Chili Powder <span class="prix">1.50€</span></p>
+                <p>Emmental Cheese <span class="prix">1.50€</span></p>
+                <p>Tofu <span class="prix">1.50€</span></p>
+                <p>Croutons <span class="prix">1.50€</span></p>
+                <p>Fried Onions <span class="prix">1.50€</span></p>
+                <p>Feta Cheese <span class="prix">1.50€</span></p>
+                <p>Sun-dried Tomatoes <span class="prix">1.50€</span></p>
+                <p>Cashew Nuts <span class="prix">1.50€</span></p>
+                <p>Chili Paste <span class="prix">1.50€</span></p>
+                <p>Potatoes <span class="prix">1.50€</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sauce">
+        <h2>Choose Your Sauce</h2>
+        <hr>
+        <div class="sauce-colonnes">
+            <div class="sauce-colonne">
+                <p>Salty Soy Sauce <span class="prix"> 1.00€</span></p>
+                <p>Sweet Soy Sauce <span class="prix">1.00€</span></p>
+                <p>Teriyaki <span class="prix">1.50€</span></p>
+                <p>Satay <span class="prix">1.50€</span></p>
+            </div>
+            <div class="sauce-colonne">
+                <p>Thai <span class="prix">1.50€</span></p>
+                <p>Red Curry <span class="prix">1.50€</span></p>
+                <p>Sesame Oil <span class="prix">1.50€</span></p>
+                <p>Spicy Sauce <span class="prix">1.50€</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="extras-desserts-boissons">
+        <div class="extras">
+            <h2>Our Extras</h2>
+            <hr>
+            <p>Chicken Skewer <span class="prix">5.50€</span></p>
+            <p>Beef Skewer <span class="prix">5.50€</span></p>
+            <p>Prawn Skewer <span class="prix">4.50€</span></p>
+            <p>Chicken Spring Rolls <span class="prix">6.50€</span></p>
+            <p>Chicken Spring Rolls <span class="prix">6.50€</span></p>
+            <p>Shrimp Spring Rolls <span class="prix">7.50€</span></p>
+        </div>
+        <div class="desserts">
+            <h2>Our Desserts</h2>
+            <hr>
+            <p>Tiramisu <span class="prix">6.50€</span></p>
+            <p>Fine Mousse <span class="prix">8.50€</span></p>
+            <p>Ice Cream <span class="prix">6.50€</span></p>
+            <p>Asian Cream <span class="prix">6.00€</span></p>
+            <p>Mango Coconut <span class="prix">7.50€</span></p>
+        </div>
+        <div class="boissons">
+            <h2>Our Drinks</h2>
+            <hr>
+            <p>Sodas 33cl <span class="prix">2.50€</span></p>
+            <p>Sodas 1l <span class="prix">3.50€</span></p>
+            <p>Coffee <span class="prix">7.50€</span></p>
+            <p>Tea <span class="prix">5.50€</span></p>
+            <p>Virgin Mojito <span class="prix">9.50€</span></p>
+            <p>Raspberry Virgin Mojito <span class="prix">9.50€</span></p>
+            <p>Exotic Virgin Mojito <span class="prix">8.50€</span></p>
+        </div>
+    </section>
 </section>
 <footer>
-    <!-- Logo -->
     <figure class="footer-logo">
-        <img src="assets/img/mille-wok-name-dark.png" alt="Mille Wok">
+        <img src="../assets/img/mille-wok-name-dark.png" alt="Mille Wok">
     </figure>
 
-    <!-- Colonnes du footer -->
     <section class="footer-container">
-        <!-- Mille Wok -->
         <section class="footer-column">
             <h4 class="footer-title">Mille Wok</h4>
             <ul>
                 <li>
-                    <a href="./restaurants/index.html">
+                    <a href="restaurants.html">
                         <svg class="icon-stroke" width="24" height="24"
                              stroke="currentColor"
                              stroke-width="2"
@@ -136,7 +217,7 @@
                         </svg>
                         Restaurants</a></li>
                 <li>
-                    <a href="./menu/index.html">
+                    <a href="#">
                         <svg class="icon-stroke" width="24" height="24" stroke="currentColor" stroke-width="2"
                              viewBox="0 0 24 24">
                             <path d="M4 3H14C16 3 18 5 18 7V21H8C6 21 4 19 4 17V3Z"/>
@@ -146,15 +227,15 @@
                         </svg>
                         Menu</a></li>
                 <li>
-                    <a href="#">
+                    <a href="index.html">
                         <svg class="icon-stroke" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor"
                              stroke-width="2">
                             <path d="M3 11L12 3L21 11"/>
                             <path d="M5 10V21H10V15H14V21H19V10"/>
                         </svg>
-                        Accueil</a></li>
+                        Home</a></li>
                 <li>
-                    <a href="./contact/index.html">
+                    <a href="contact.html">
                         <svg class="icon-stroke" width="24" height="24" stroke="currentColor" stroke-width="2"
                              viewBox="0 0 24 24">
                             <rect x="3" y="5" width="18" height="14" rx="2"/>
@@ -162,20 +243,19 @@
                         </svg>
                         Contact</a></li>
                 <li>
-                    <a href="./commander/index.html">
+                    <a href="commander.html">
                         <svg class="icon-stroke" width="24" height="24" stroke="currentColor" stroke-width="2"
                              viewBox="0 0 24 24">
                             <circle cx="9" cy="21" r="1"/>
                             <circle cx="18" cy="21" r="1"/>
                             <path d="M1 3H4L6 14H20L23 6H6"/>
                         </svg>
-                        Commander</a></li>
+                        Order</a></li>
             </ul>
         </section>
 
-        <!-- Information -->
         <section class="footer-column">
-            <h4 class="footer-title">Informations</h4>
+            <h4 class="footer-title">Information</h4>
             <ul>
                 <li>
                     <a href="./allergenes" target="_blank">
@@ -184,7 +264,7 @@
                             <path d="M12 2C12 2 6 9 6 13C6 17 8.7 21 12 21C15.3 21 18 17 18 13C18 9 12 2 12 2Z"/>
                             <circle cx="12" cy="13" r="2"/>
                         </svg>
-                        Allergènes 🔗</a></li>
+                        Allergens 🔗</a></li>
                 <li>
                     <a href="./mentions-legales" target="_blank">
                         <svg class="icon-stroke" width="24" height="24" stroke="currentColor" stroke-width="2"
@@ -194,7 +274,7 @@
                             <path d="M9 13H15"/>
                             <path d="M9 17H15"/>
                         </svg>
-                        Mentions légales 🔗</a></li>
+                        Legal Notice 🔗</a></li>
                 <li>
                     <a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g7" target="_blank">
                         <svg class="icon-stroke" width="24" height="24" stroke="currentColor" stroke-width="2"
@@ -213,9 +293,8 @@
             </ul>
         </section>
 
-        <!-- Suivez-nous -->
         <section class="footer-column">
-            <h4 class="footer-title">Suivez-nous !</h4>
+            <h4 class="footer-title">Follow Us!</h4>
             <nav class="icons-row">
                 <a href="https://www.instagram.com/mille.wok" class="instagram"
                    rel="noopener noreferrer" target="_blank" aria-label="Instagram">
@@ -242,7 +321,7 @@
         </section>
     </section>
     <div class="footer-bottom">
-        <p>© 2025 Mille Wok. Tous droits réservés. Propulsé par AdamGPT.</p>
+        <p>© 2025 Mille Wok. All rights reserved. Powered by AdamGPT.</p>
     </div>
 </footer>
 </body>
