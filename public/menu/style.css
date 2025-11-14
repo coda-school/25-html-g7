@@ -162,23 +162,24 @@ body
 .sauce h2 
 {
   text-align: center;
-  color: #5b3a29;
+  color: #965535;
   margin-bottom: 10px;
 }
 
 .sauce-colonnes 
 {
-  display: flex;      
+  display: flex;
 }
 .sauce-colonne 
 {
-  flex: 1;   
+  flex: 1;  
+  gap:10rem 
 }          
 .sauce-colonne p 
 {
   display: flex;
   justify-content: space-between; /* ürün solda, fiyat sağda */
-  margin: 4px 0;
+  margin: 4px 3rem;
 }
 .prix 
 {
@@ -187,8 +188,8 @@ body
 .extras-desserts-boissons {
   display: flex;              /* kutuları yan yana diz */
   justify-content: space-between;
-  gap: 20px;                  /* kutular arası boşluk */
-  width: 90%;                 /* kapsayıcı genişliği */
+  gap: 20px;                
+  width: 90%;                 /* kapsayıcı (çerçeve)genişliği */
   margin: 2rem auto;
 }
 
@@ -213,7 +214,6 @@ body
 }
 .extras-desserts-boissons p span
 {
-
    text-align: center;
    float: right;
 }
