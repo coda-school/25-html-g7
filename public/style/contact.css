@@ -60,36 +60,6 @@ input, textarea
     border-radius: 15px;
     padding: 12px;
 }
-.order-btn
-{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-    text-shadow: 0 2px 0 var(--shadow-color);
-}
-.btn
-{
-    display: inline-block;
-    padding: 20px 40px;
-    background-color: var(--accent-gold);
-    color: white;
-    text-decoration: none;
-    border-radius: 18px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 0 7px 0 0 rgb(129, 106, 66);
-    margin-top: 2rem;
-}
-
-.btn:hover
-{
-    background-color: var(--accent-gold);
-    transform: translateY(5px);
-    box-shadow: 0 3px 0 0 rgb(129, 106, 66);
-}
 
 label:has(+ input:required)::before {
     content:"* ";

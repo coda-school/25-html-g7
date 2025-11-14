@@ -44,37 +44,47 @@ body {
     font-family: sans-serif;
 }
 
-.lang {
-    text-decoration: none;
-    color: var(--text-color-white);
+/* --- 2. BOUTON COMMANDER --- */
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    text-shadow: 0 2px 0 var(--shadow-color);
 }
 
-.lang:hover {
-    color: var(--accent-gold);
+.btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: var(--accent-gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 7px 0 0 rgb(129, 106, 66);
+}
+
+.btn:hover {
+    background-color: var(--accent-gold);
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 0 rgb(129, 106, 66);
 }
 
 .lang-buttons {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 4rem;
 }
 
 .flag-btn {
-    margin-top: 1rem;
-    padding: 10px 20px !important; /* un peu plus petit pour les drapeaux */
+    padding: 10px 20px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.flag-btn img {
-    width: 40px;
-    height: auto;
-}
-
-.logo img {
-    width: 40px;
 }
 
 .mille-wok-title {
