@@ -1,40 +1,40 @@
-.mille-wok-title
-{
+.mille-wok-title {
     padding-top: 5rem;
     width: 180px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.menu
-{
-    text-align: center;
-    display: grid;
-    color: #C6A66C;
-    text-shadow: 0px 0px 10px rgba(0,0,0,7);
-}
-.sous-titre
-{
-    text-align: center;
-    display: grid;
-    font-size: larger;
-    color: #C6A66C;
-}
-body
-{
-    z-index: 2;
+
+body {
+    z-index: -1;
     font-family: sans-serif;
-    margin: 0;  
+    margin: 0;
     padding: 0;
-    background-image: url("nos-restaurants-bg.png"); 
-    background-size: cover;     
+    background-image: url("../assets/img/nos-restaurants-bg.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
-    backdrop-filter: blur(5px);
 }
-.nos-signatures
-{
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 5rem;
+    text-shadow: 0 4px 1px rgb(129, 106, 66);
+}
+
+.nos-signatures {
     max-width: 80vw;
     text-align: center;
     margin: 2rem auto;
@@ -43,178 +43,183 @@ body
     background-color: beige;
     border: 3px solid;
     border-radius: 10px;
-    box-shadow: 0 7px 10px 8px rgba(0,0,0,0.7)
+    box-shadow: 0 7px 10px 8px var(--shadow-color);
 }
-.nos-signatures p
-{
+
+.nos-signatures p {
     color: black;
     text-align: center;
     margin: 5px 0;
 }
-.nos-signatures p span
-{
-  text-align: center;
-  float: right;
+
+.nos-signatures p span {
+    text-align: center;
+    float: right;
 
 }
-.menu-section
-{
+
+.menu-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     font-family: Arial, sans-serif;
 }
-.row 
-{
-  display: flex;
-  justify-content: center; 
-  gap: 40px; 
-  margin-top: 30px;
-}
-.box 
-{
-  background-color: beige;
-  border: 3px solid #c6a66c;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  text-align: left;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
-}
-.box h2 
-{
-  color: #6b3e1e;
-}
-.box p
-{
-  font-weight: normal;
-  margin: 5px 0;
-}
-.row p span
-{
-   text-align: center;
-   float: right;
-}
-.toppings-title-box 
-{
-  background-color: beige;
-  border: 3px solid #c6a66c;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto 10px auto;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-}
-.row-toppings 
-{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
 }
 
-.box-topping 
-{
-  background-color: beige;
-  border: 3px solid #c6a66c;
-  border-radius: 10px;
-  padding: 15px;
-  width: 250px; /* iki kutu yan yana sığacak genişlik */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+.box {
+    background-color: beige;
+    border: 3px solid var(--accent-gold);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 3px 3px 10px var(--shadow-color);
 }
 
-.box-topping p 
-{
-  display: flex;
-  justify-content: space-between; 
-  margin: 5px 0;
+.box h2 {
+    color: #6b3e1e;
 }
 
-.prix 
-{
-  font-weight: bold;
+.box p {
+    color: var(--text-color-black);
+    margin: 5px 0;
+}
+
+.row p span {
+    text-align: center;
+    float: right;
+}
+
+.toppings hr{
+    border: none;
+    border-top: 2px solid var(--accent-gold);
+}
+
+.toppings-title-box {
+    color: #6b3e1e;
+    background-color: beige;
+    border: 2px solid #c6a66c;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    justify-self: center;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.row-toppings {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box-topping {
+    color: var(--text-color-black);
+    background-color: beige;
+    border: 3px solid #c6a66c;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+}
+
+.box-topping p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.prix {
+    font-weight: bold;
 }
 
 
 .sauce-title-box {
-  background-color: beige;
-  border: 3px solid #c6a66c;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto 10px auto;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    background-color: beige;
+    border: 3px solid #c6a66c;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px var(--shadow-color);
 }
+
 .sauce {
-  background-color: beige;
-  border: 3px solid #c6a66c;
-  border-radius: 10px;
-  width: 80%;         
-  max-width: 700px;    
-  margin: 2rem auto;
-  padding: 15px 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
-}
-.sauce h2 
-{
-  text-align: center;
-  color: #965535;
-  margin-bottom: 10px;
+    color: var(--text-color-black);
+    background-color: beige;
+    border: 3px solid #c6a66c;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px var(--shadow-color);
 }
 
-.sauce-colonnes 
-{
-  display: flex;
+.sauce h2 {
+    text-align: center;
+    color: #6b3e1e;
+    margin-bottom: 10px;
 }
-.sauce-colonne 
-{
-  flex: 1;  
-  gap:10rem 
-}          
-.sauce-colonne p 
-{
-  display: flex;
-  justify-content: space-between; /* ürün solda, fiyat sağda */
-  margin: 4px 3rem;
+
+.sauce-colonnes {
+    display: flex;
 }
-.prix 
-{
-  font-weight: bold;
+
+.sauce-colonne {
+    flex: 1;
+    gap: 10rem
 }
+
+.sauce-colonne p {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 3rem;
+}
+
+.prix {
+    font-weight: bold;
+}
+
 .extras-desserts-boissons {
-  display: flex;              /* kutuları yan yana diz */
-  justify-content: space-between;
-  gap: 20px;                
-  width: 90%;                 /* kapsayıcı (çerçeve)genişliği */
-  margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: 2rem auto;
 }
 
-.extras, .desserts, .boissons 
-{
-  background-color: beige;
-  border: 3px solid #c6a66c;
-  border-radius: 10px;
-  padding: 20px;
-  flex: 1;                     /* tüm kutular eşit genişlikte */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+.extras, .desserts, .boissons {
+    background-color: beige;
+    border: 3px solid #c6a66c;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 4px 10px var(--shadow-color);
 }
-.extras h2, .desserts h2, .boissons h2
- {
-  text-align: center;
-  color: #5b3a29;
-  margin-bottom: 10px;
+
+.extras h2, .desserts h2, .boissons h2 {
+    text-align: center;
+    color: #5b3a29;
+    margin-bottom: 10px;
 }
-.extras p, .desserts p, .boissons p 
-{
-  margin: 5px 0;
+
+.extras p, .desserts p, .boissons p {
+    margin: 5px 0;
 }
-.extras-desserts-boissons p span
-{
-   text-align: center;
-   float: right;
+
+.extras-desserts-boissons p span {
+    text-align: center;
+    float: right;
 }
 

@@ -1,0 +1,12 @@
+h1 {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    justify-self: center;
+    font-size: 10rem;
+    color: #C6A66C;
+    text-shadow: 0 8px 1px rgb(129, 106, 66);
+}
+
+body {
+    background-color: var(--bg-color);
+}
